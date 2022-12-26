@@ -1,0 +1,9 @@
+{
+  "dep": "prod,dev,bundle,peer,optional",
+  "reject": [
+    "@armit/core",
+    "@armit/create",
+    "@armit/common",
+    "@armit/eslint-config-bases"
+  ]
+}
