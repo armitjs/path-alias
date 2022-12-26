@@ -3,17 +3,17 @@
 Assign path alias using tsconfig.json file
 
 <p align="left">
-  <a aria-label="Build" href="https://github.com/armitjs/armit/actions?query=workflow%3ACI">
-    <img alt="build" src="https://img.shields.io/github/workflow/status/armitjs/armit/CI-lib-path-alias/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
+  <a aria-label="Build" href="https://github.com/armitjs/path-alias/actions?query=workflow%3ACI">
+    <img alt="build" src="https://img.shields.io/github/workflow/status/armitjs/path-alias/CI-lib-path-alias/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
   </a>
   <a aria-label="LoC">  
-    <img alt="LoC" src="https://img.shields.io/tokei/lines/github/armitjs/armit?style=flat-quare&labelColor=000000" />
+    <img alt="LoC" src="https://img.shields.io/tokei/lines/github/armitjs/path-alias?style=flat-quare&labelColor=000000" />
   </a>
-  <a aria-label="Top language" href="https://github.com/armitjs/armit/search?l=typescript">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/armitjs/armit?style=flat-square&labelColor=000&color=blue">
+  <a aria-label="Top language" href="https://github.com/armitjs/path-alias/search?l=typescript">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/armitjs/path-alias?style=flat-square&labelColor=000&color=blue">
   </a>
-  <a aria-label="Licence" href="https://github.com/armitjs/armit/blob/main/LICENSE">
-    <img alt="Licence" src="https://img.shields.io/github/license/armitjs/armit?style=flat-quare&labelColor=000000" />
+  <a aria-label="Licence" href="https://github.com/armitjs/path-alias/blob/main/LICENSE">
+    <img alt="Licence" src="https://img.shields.io/github/license/armitjs/path-alias?style=flat-quare&labelColor=000000" />
   </a>
 </p>
 
