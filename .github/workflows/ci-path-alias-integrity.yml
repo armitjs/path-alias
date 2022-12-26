@@ -1,4 +1,4 @@
-name: CI-armit-integrity
+name: CI-armit-path-alias-integrity
 
 on:
   push:
