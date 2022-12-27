@@ -4,7 +4,7 @@ Assign path alias using tsconfig.json file
 
 <p align="left">
   <a aria-label="Build" href="https://github.com/armitjs/path-alias/actions?query=workflow%3ACI">
-    <img alt="build" src="https://img.shields.io/github/workflow/status/armitjs/path-alias/CI-lib-path-alias/main?label=CI&logo=github&style=flat-quare&labelColor=000000" />
+    <img alt="build" src="https://img.shields.io/github/actions/workflow/status/armitjs/path-alias/ci-lib-path-alias.yml?branch=main&label=CI&logo=github&style=flat-quare&labelColor=000000" />
   </a>
   <a aria-label="LoC">  
     <img alt="LoC" src="https://img.shields.io/tokei/lines/github/armitjs/path-alias?style=flat-quare&labelColor=000000" />
