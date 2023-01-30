@@ -37,12 +37,15 @@ export function replace(input: string, parentUrl?: string): string | undefined {
       );
 
   if (path.startsWith(base)) {
-    const found = Object.entries(tsconfigOpts.paths)
+    // support config `@armit/logger/node`, `@armit/logger`
+    const pathEntries = Object.entries(tsconfigOpts.paths)
       .map(([k, v]) => ({
         alias: k.replace(/\*/g, ''),
         path: v[0]?.replace(/\*/g, ''),
       }))
-      .find(({ alias }) => input.startsWith(alias));
+      .sort((a, b) => b.alias.length - a.alias.length);
+
+    const found = pathEntries.find(({ alias }) => input.startsWith(alias));
 
     if (found) {
       const fullPath = resolve(base, found.path);
