@@ -1,5 +1,13 @@
 # @armit/path-alias
 
+## 0.0.14
+
+### Patch Changes
+
+- [`cbb93d7`](https://github.com/armitjs/path-alias/commit/cbb93d780ef2d8dc28416bfb37016384df11c28c) Thanks [@tianyingchun](https://github.com/tianyingchun)! - Add tsconfig paths alias sorting
+
+- [`27ac6c6`](https://github.com/armitjs/path-alias/commit/27ac6c699f05f2fa6fd8eb37c0347a747c7498b6) Thanks [@tianyingchun](https://github.com/tianyingchun)! - upgrade package deps version
+
 ## 0.0.13
 
 ### Patch Changes
