@@ -27,6 +27,7 @@ export function load(
 }
 
 // Use the ts-node mechanism only if applied
+// eslint-disable-next-line sonarjs/cognitive-complexity
 export const resolve: ResolveFn = (specifier, context, defaultResolve) => {
   const isTsNode = pathAlias.checkTsNode(specifier, context);
   if (isTsNode) {

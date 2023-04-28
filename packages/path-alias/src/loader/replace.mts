@@ -5,6 +5,7 @@ import { leftReplacer } from '../tool/left-replacer.js';
 import { searchMonoProjectDir } from '../tool/search-mono-project-dir.js';
 import { Tsconfig } from '../tsconfig/tsconfig.js';
 
+// eslint-disable-next-line sonarjs/cognitive-complexity
 export function replace(input: string, parentUrl?: string): string | undefined {
   // ParentURL is required
   if (typeof parentUrl !== 'string') {
