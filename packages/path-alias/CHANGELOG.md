@@ -1,5 +1,11 @@
 # @armit/path-alias
 
+## 0.0.17
+
+### Patch Changes
+
+- [`ae30b3f`](https://github.com/armitjs/path-alias/commit/ae30b3ff1438cffa96287d9e02b376f154bf8778) Thanks [@tianyingchun](https://github.com/tianyingchun)! - bump version
+
 ## 0.0.16
 
 ### Patch Changes
