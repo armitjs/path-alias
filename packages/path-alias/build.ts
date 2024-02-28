@@ -1,9 +1,9 @@
 import { existsSync } from 'fs';
 import { rm } from 'fs/promises';
-import type { Format } from 'tsup';
-import { build } from 'tsup';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import type { Format } from 'tsup';
+import { build } from 'tsup';
 
 const getDirname = (url: string, subDir = '') => {
   return join(dirname(fileURLToPath(url)), subDir);
