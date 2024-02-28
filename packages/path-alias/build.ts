@@ -1,6 +1,13 @@
+import { existsSync } from 'fs';
 import { rm } from 'fs/promises';
 import type { Format } from 'tsup';
 import { build } from 'tsup';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const getDirname = (url: string, subDir = '') => {
+  return join(dirname(fileURLToPath(url)), subDir);
+};
 
 async function buildAll() {
   const entries = {
@@ -52,8 +59,11 @@ async function buildAll() {
   }
 }
 (async () => {
-  await rm('./dist', {
-    recursive: true,
-  });
+  const dist = getDirname(import.meta.url, './dist');
+  if (existsSync(dist)) {
+    await rm(dist, {
+      recursive: true,
+    });
+  }
   await buildAll();
 })();
