@@ -28,6 +28,7 @@ module.exports = {
   rules: {
     // optional overrides per project
     'regexp/no-unused-capturing-group': 'off',
+    '@typescript-eslint/naming-convention': 'off',
   },
   overrides: [
     {

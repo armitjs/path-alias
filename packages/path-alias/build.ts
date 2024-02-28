@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/naming-convention */
+import { rm } from 'fs/promises';
 import type { Format } from 'tsup';
 import { build } from 'tsup';
 
@@ -51,5 +51,9 @@ async function buildAll() {
     });
   }
 }
-
-await buildAll();
+(async () => {
+  await rm('./dist', {
+    recursive: true,
+  });
+  await buildAll();
+})();

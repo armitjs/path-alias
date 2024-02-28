@@ -16,7 +16,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "files.associations": {
       "*.css": "tailwindcss"
@@ -28,9 +28,6 @@
     },
     "eslint.alwaysShowStatus": true,
     // https://github.com/Microsoft/vscode-eslint#mono-repository-setup
-    "eslint.workingDirectories": [
-      "./packages/path-alias",
-      "./packages/docs",
-    ]
+    "eslint.workingDirectories": ["./packages/path-alias", "./packages/docs"]
   }
 }
