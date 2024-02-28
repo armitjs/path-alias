@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
     steps:
       - uses: actions/checkout@v3
 
@@ -66,7 +66,7 @@ jobs:
       - name: Unit tests
         working-directory: packages/path-alias
         run: |
-          yarn test-unit --passWithNoTests
+          yarn test-unit
 
       - name: Build lib-path-alias
         working-directory: packages/path-alias
