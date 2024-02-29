@@ -31,6 +31,9 @@
     "./esm": {
       "import": "./dist/loader/index.mjs"
     },
+    "./register": {
+      "import": "./dist/loader/register.mjs"
+    },
     ".": {
       "types": "./dist/index.d.ts",
       "require": "./dist/index.cjs",
@@ -63,7 +66,7 @@
     "module-alias": "^2.2.3",
     "pkg-up": "^4.0.0",
     "tsconfck": "^3.0.2",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "4.2.0"
   },
   "devDependencies": {
     "@armit/eslint-config-bases": "0.1.4",

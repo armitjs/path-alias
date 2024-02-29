@@ -40,6 +40,17 @@ async function buildAll() {
         };
       },
     },
+    'src/loader/register.mts': {
+      format: ['esm'],
+      entry: 'loader/register',
+      dts: false,
+      clean: false,
+      outExtension() {
+        return {
+          js: `.mjs`,
+        };
+      },
+    },
   };
 
   for (const [key, value] of Object.entries(entries)) {

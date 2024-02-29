@@ -168,9 +168,8 @@ console.log("path:", path);
 With **ts-node** the output is:
 
 ```bash
-node \
---loader @armit/path-alias/esm \
-./src/index.ts
+node --loader @armit/path-alias/esm ./src/index.ts
+node --import=@armit/path-alias/register ./scripts/build.ts
 
 # path: src/folder-a/*
 ```
@@ -178,9 +177,8 @@ node \
 With the transpiled code:
 
 ```bash
-node \
---loader @armit/path-alias/esm \
-./dist/index.js
+node --loader @armit/path-alias/esm ./dist/index.js
+node --import=@armit/path-alias/register ./dist/index.js
 
 # path: dist/folder-a/*
 ```

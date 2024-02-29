@@ -2,16 +2,13 @@ import { pathToFileURL } from 'url';
 import type { LoadFunction, ResolveFn } from 'ts-node/esm';
 // Use the "load" function of ts-node only if applied
 import { resolve as resolveTs, load as loadTs } from 'ts-node/esm';
-import * as tsConfigPaths from 'tsconfig-paths';
-
 import { pathAlias } from '../path-alias.js';
+import { createMatchPath } from './create-match-path.js';
 import { replace } from './replace.mjs';
 
 pathAlias.showInConsole();
-const matchPath = tsConfigPaths.createMatchPath(
-  pathAlias.opts.baseUrl,
-  pathAlias.opts.paths
-);
+
+const matchPath = createMatchPath(pathAlias.opts.baseUrl, pathAlias.opts.paths);
 
 export function load(
   url: string,
