@@ -1,5 +1,11 @@
 # @armit/path-alias
 
+## 0.0.18
+
+### Patch Changes
+
+- [`a9150db`](https://github.com/armitjs/path-alias/commit/a9150dbc9ca2a631442bc73859cc12ab0a1b7be3) Thanks [@tianyingchun](https://github.com/tianyingchun)! - fix ts-paths resolver issue & add `register` mode
+
 ## 0.0.17
 
 ### Patch Changes
