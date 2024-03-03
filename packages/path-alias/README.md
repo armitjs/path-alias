@@ -197,3 +197,30 @@ Optionally receives as second parameter an object with this options:
 - The library requires a `"tsconfig.json"` file into the current working directory to work. Doesn't matter if that file extends another file, or be a part of a set of inhetirance, **while all required properties are accesible through its ancestors.**
 
 - The resolve output between `"baseURL"` and the `"paths"` declared in the `"tsconfig.json"` file must always return a path inside of `"rootDir"` folder.
+- Recommand setup your `tsconfig.json`, `baseUrl` to `./`
+
+```ts
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "../../tsconfig.base.json",
+  "ts-node": {
+    "files": true
+  },
+  "compilerOptions": {
+    // If the code contains import 'events' and it coincidentally matches the paths baseUrl /src/events directory,
+    // it may cause the built-in events module to be incorrectly resolved as a relative module of the project.
+    // FIXME: recommmand config baseUrl:'./' Instead of use `./src`
+    // Avoid run into issue of "builtin module `events` wrong resolved as `./src/events`"
+    "baseUrl": "./",
+    "allowJs": false,
+    "noEmit": false,
+    "incremental": true,
+    "paths": {
+      "@wedglam/testing": ["../../packages/testing/src/index.js"]
+    },
+    "types": ["vitest/globals"]
+  },
+  "exclude": ["**/node_modules", "**/.*/", "dist", "build"]
+}
+
+```

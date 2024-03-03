@@ -43,6 +43,9 @@ export function createMatchPath(
     fileExists?: FileExistsSync,
     extensions?: Array<string>
   ) =>
+    // If the code contains import 'events' and it coincidentally matches the paths baseUrl /src/events directory,
+    // it may cause the built-in events module to be incorrectly resolved as a relative module of the project.
+    // FIXME: recommmand config baseUrl:'./' Instead of use `./src`
     matchFromAbsolutePaths(
       absolutePaths,
       requestedModule,
