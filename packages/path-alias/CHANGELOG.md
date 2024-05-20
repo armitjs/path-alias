@@ -1,5 +1,11 @@
 # @armit/path-alias
 
+## 0.0.19
+
+### Patch Changes
+
+- [`86271df`](https://github.com/armitjs/path-alias/commit/86271dffb99b58784e86dee2d1b21542741e3d3b) Thanks [@tianyingchun](https://github.com/tianyingchun)! - fix node20 errors produced by reportTSError are not serialised correctly
+
 ## 0.0.18
 
 ### Patch Changes
