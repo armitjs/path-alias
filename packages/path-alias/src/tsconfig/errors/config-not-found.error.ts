@@ -1,5 +1,7 @@
 export class ConfigNotFoundError extends Error {
   constructor() {
-    super('Cannot found a valid "tsconfig.json" file');
+    super(
+      'No valid "tsconfig.json" found, or `baseUrl`, `rootDir`, `outDir`, `paths` are missing!'
+    );
   }
 }

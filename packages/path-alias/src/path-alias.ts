@@ -129,8 +129,6 @@ class PathAlias {
             ? join(fullPath, leftReplacer(specifier, found.alias, ''))
             : fullPath;
 
-        console.log('specifier:', specifier);
-
         if (pathAlias.isTsNode) {
           return result.replace(/\.js$/gi, '.ts').replace(/\.mjs$/gi, '.mts');
         } else {

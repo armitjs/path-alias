@@ -1,5 +1,4 @@
 import { register } from 'node:module';
-import { setUncaughtExceptionCaptureCallback } from 'node:process';
 import { pathToFileURL } from 'node:url';
 
 // Node 20: errors produced by reportTSError are not serialised correctly when using ESM loader
@@ -9,7 +8,7 @@ import { pathToFileURL } from 'node:url';
 // [Object: null prototype] {
 //   [Symbol(nodejs.util.inspect.custom)]: [Function: [nodejs.util.inspect.custom]]
 // }
-setUncaughtExceptionCaptureCallback((err) => {
+process.on('uncaughtException', (err) => {
   console.error(err);
   process.exit(1);
 });
