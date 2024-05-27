@@ -1,5 +1,11 @@
 # @armit/path-alias
 
+## 0.0.20
+
+### Patch Changes
+
+- [`75e61f2`](https://github.com/armitjs/path-alias/commit/75e61f29217bec83fdf6ebd5a3be6a12cd6fee0e) Thanks [@tianyingchun](https://github.com/tianyingchun)! - refact `setUncaughtExceptionCaptureCallback` to `process.on`
+
 ## 0.0.19
 
 ### Patch Changes
